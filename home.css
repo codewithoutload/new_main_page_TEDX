@@ -500,7 +500,7 @@ body{
     .headings_bottom{
         /* font-size: 1.2vw; */
         font-size: 25px;
-        margin: 5px auto 5px 0;
+        margin: 15px auto 15px 0;
     
     }
     
@@ -508,13 +508,13 @@ body{
         /* font-size: 1vw; */
         font-size: 18px;
         color:  rgba(153, 153, 153, 1);
-        margin:7px 5px 8px 5px;
+        margin:15px 5px 15px 5px;
         /* padding: 10% 10% 10% 10%; */
         
     }
 
     .links3{
-        margin: 6px 5px 7px 5px;
+        margin: 15px 5px 15px 5px;
         font-size: 18px;
         color:  rgba(153, 153, 153, 1);
     }
@@ -559,7 +559,7 @@ body{
     }
 
     #ted_image{
-        width: 320px;
+        width: 290px;
     }
 
     .headings_top{
@@ -580,12 +580,12 @@ body{
         /* font-size: 1vw; */
         font-size: 18px;
         color:  rgba(153, 153, 153, 1);
-        margin: 7px 5px 8px 5px;
+        margin: 10px 5px 10px 5px;
         
     }
     
     .links3{
-        margin: 6px 5px 7px 5px;
+        margin: 10px 5px 10px 5px;
         font-size: 18px;
         color:  rgba(153, 153, 153, 1);
     }
@@ -608,8 +608,13 @@ body{
         white-space: nowrap;
     }
 
+    #sub_box1{
+        padding-right: 65px;
+    }
+
     #sub_box2{
-    
+        
+        padding-right: 40px;
         /* padding-left: 10vw; */
         /* padding-right: 20vw; */
     }
@@ -656,7 +661,7 @@ body{
         /* font-size: 1.2vw; */
         font-size: 3.5vw;
         /* margin: 10% 10% 10% 10%; */
-        padding: 2vw 2vw 0vw 2vw;
+        padding: 2vw 2vw 2vw 2vw;
         text-align: center;
     }
     
@@ -676,13 +681,13 @@ body{
         font-size: 2.5vw;
         color:  rgba(153, 153, 153, 1);
         /* margin: 10% 10% 10% 10%; */
-        padding: 1.1vw 1.1vw 0.5vw 1.1vw;
+        padding: 1.1vw 1.1vw 1.1vw 1.1vw;
         text-align: center;
         
     }
     
     .links3{
-        padding: 1vw 1vw 0.5vw 1vw;
+        padding: 1vw 1vw 1.1vw 1vw;
         font-size: 2.5vw;
         color:  rgba(153, 153, 153, 1);
         text-align: center;
