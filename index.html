@@ -5,22 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>My Website</title>
-    <link rel="stylesheet" href="./home.css">
+    <link rel="stylesheet" href="home.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="Stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="script.js"></script>
   </head>
   <body>
-
-    <nav id="primary">
-        <img id="logo" src="./Images/TEDx logo.png" alt="TEDx logo">
+    <nav id="primary" h="14">
+        <img id="logo" src="TEDxlogo.png" alt="TEDx logo">
         <div id="list">
-            <a href=# class="tabs">HOME</a>
-            <a href=# class="tabs">TALKS</a>
-            <a href=# class="tabs">BLOGS</a>
-            <a href=# class="tabs">ABOUT US</a>
-            <a href=# class="tabs">CONTACT US</a>
+            <a href=# class="tabs" id="home">HOME</a>
+            <a class="tabs" id="talks">TALKS</a>
+            <a href=# class="tabs" id="blogs">BLOGS</a>
+            <a href=# class="tabs" id="aboutUs">ABOUT US</a>
+            <a href=# class="tabs" id="contactUs">CONTACT US</a>
             <img src="./Images/toggleMenuIcon-white.jpg" alt="MENU" width="50px" id="toggleMenu">
+        </div>
+        <div class="talk-extra" id="talkExtra">
+            <div class=" item" id="first"><a href="">TEDxIITGuwahati</a></div>
+            <div class=" item" id="second"><a href="">TEDxIITGuwahatiStudio</a></div>
         </div>
     </nav>
     <div id="leftContainer" class="close">
@@ -35,7 +39,7 @@
     </div>
     
     <main>
-        <div class="background_image">
+        <div class="background_image" id="body">
             <div class="block">
                 <p class="welcome"><span style="color:#ffffff">Welcome to</span></p>
                 <p class="tedxiitg"><span style="color:#FF2B06"> TEDxIITGuwahati </span></p>
@@ -241,4 +245,28 @@
   </div>
   <!-- footer code ends here -->
   </body>
+  <script>
+    var talk = document.getElementById("talks");
+    talk.addEventListener("click",()=>{
+        var talkExtra = document.getElementById("talkExtra");
+        if(talkExtra.style.display=="none")
+            talkExtra.style.display = "flex";
+        else
+            talkExtra.style.display = "none";
+    });
+    var welcome = document.getElementsByClassName("welcome");
+    window.addEventListener("scroll",()=>{
+        var nav = document.getElementById("primary");
+        var rect = welcome[0].getBoundingClientRect();
+        if(rect.top<0){
+            nav.style.height = 10 + "vh";
+            nav.style.opacity=1;
+            nav.setAttribute("h","10");
+        }else{
+            nav.style.height = 14 + "vh";
+            nav.setAttribute("h","14");
+            nav.style.opacity = 0.85;
+        }
+    });
+</script>
 </html>

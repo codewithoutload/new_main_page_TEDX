@@ -1,38 +1,24 @@
 
-
-
 /* Navbar */
-
 #primary
 {
+    width: 100vw;
+    height: 14vh;
+    position: fixed;
     display: flex;
-    position: sticky;
-    top:0px;
-    background-color: black; 
-    margin: -20px -10px;
+    background-color: black;
     opacity: 0.85;
-    transition:"padding-top" 0.5s ;
     padding-top: auto;
     padding-bottom: auto;
     z-index: 1;
+    margin-left: -5vw;
+    transition: all 0.5s ease-in-out;
 }
-
-#logo
-{
-    display: inline;
-    margin: auto;
-    width: 260px;
+.scrolled{
+    background: #000;
+    opacity: 1;
+    height: 75px;
 }
-
-
-#list
-{
-    display: inline-flex;
-    color: white;
-    margin:auto;
-    
-}
-
 .tabs
 {
     background-color: black;
@@ -48,6 +34,92 @@
 {
     color: red;
 }
+.talk-extra div a{
+    text-decoration: none;
+    color: white;
+}
+.talk-extra{
+    width: 18vw;
+    height: 10vh;
+    position: absolute;
+    left: 59%;
+    top: 10vh;
+    background-color: black;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+.item{
+    margin-left: 1vw;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+.item a{
+    transition: all 0.3s ease-in-out;
+}
+.item a:hover
+{
+    color: red;
+}
+@media only screen and (min-width: 1240px) and (max-width: 1286px){
+    .talk-extra{
+        width: 18vw;
+        height: 10vh;
+        position: absolute;
+        left: 56vw;
+        top: 10vh;
+        background-color: black;
+        display: none;
+        flex-direction: column;
+        justify-content: space-around;
+        
+    }
+}
+@media only screen and (min-width: 1150px) and (max-width: 1239px){
+    .talk-extra{
+        width: 18vw;
+        height: 10vh;
+        position: absolute;
+        left: 54vw;
+        top: 10vh;
+        background-color: black;
+        display: none;
+        flex-direction: column;
+        justify-content: space-around;
+        
+    }
+}@media only screen and (min-width: 1020px) and (max-width: 1159px){
+    .talk-extra{
+        width: 18vw;
+        height: 10vh;
+        position: absolute;
+        left: 53vw;
+        top: 10vh;
+        background-color: black;
+        display: none;
+        flex-direction: column;
+        justify-content: space-around;
+        
+    }
+}
+#logo
+{
+    display: inline;
+    margin: auto;
+    width: 19%;
+    height: 100%;
+}
+
+
+#list
+{
+    display: inline-flex;
+    color: white;
+    margin:auto;
+    
+}
+
 
 #toggleMenu
 {
